@@ -697,7 +697,7 @@ MODAL EDITAR libro
           
           
           $("#nuevaDescripcion").val("");
-          $("#ndescripcion").show();
+          $("#nuevaDescripcion").show();
           $("#nuevoNombre").val("");
           $("#ncategoria").show();
           $("#nidioma").show();
@@ -736,10 +736,11 @@ MODAL EDITAR libro
     { 
       $("#nuevoCodigo").val("");
       $("#nuevaDescripcion").val("");
+      $("#nuevaDescripcion").show();
       $("#nuevoNombre").val("");
       $("#nuevoNombre").show();
       $("#nuevaCategoria").val("");
-      $("#nuevaCategoria").show()
+      $("#nuevaCategoria").show();
       $("#nuevoIdioma").val("");
       $("#nuevoIdioma").show();
       $("#nuevaFecha").val("");
