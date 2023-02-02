@@ -1,1 +1,1 @@
-# Sistema control de productos
+Sistema control de productos
