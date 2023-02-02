@@ -118,7 +118,7 @@ MODAL AGREGAR libro
                 <span class="input-group-addon"><i class="fa fa-code"></i></span> 
 
                 <input type="text" class="form-control input-lg" id="nuevoCodigo" name="nuevoCodigo" placeholder="Ingresar código" onblur="buscar_datos();" required>
-                <input type="text" name="accion" id="accion" value="crear">
+                <input type="hidden" name="accion" id="accion" value="crear">
 
               </div>
 
@@ -690,7 +690,7 @@ MODAL EDITAR libro
           $("#nuevoPrecioVenta").val(valores.nuevoPrecioVenta);
           $("#nprecio"). hide();
           $("#imagenActual").val(valores.nuevaImagen);
-
+ 
           $(".previsualizar").attr("src",  valores.nuevaImagen);
         } else
         { 
@@ -709,6 +709,7 @@ MODAL EDITAR libro
           $("#nuevaFecha").val("");
           $("#nuevoAutor").val("");
           $("#nuevoStock").val("");
+          $("#shastock").val("");
           $("#vaca").hide();
           $("#ala").hide();
           $("#nuevoPrecioCompra").val("");
@@ -736,14 +737,24 @@ MODAL EDITAR libro
       $("#nuevoCodigo").val("");
       $("#nuevaDescripcion").val("");
       $("#nuevoNombre").val("");
+      $("#nuevoNombre").show();
       $("#nuevaCategoria").val("");
+      $("#nuevaCategoria").show()
       $("#nuevoIdioma").val("");
+      $("#nuevoIdioma").show();
       $("#nuevaFecha").val("");
+      $("#nuevaFecha").show();
       $("#nuevoAutor").val("");
+      $("#nuevoAutor").show();
       $("#nuevoStock").val("");
+      $("#nuevoStock").show();
+      $("shastock").val("xd");
       $("#nuevoPrecioCompra").val("");
+      $("#nuevoPrecioCompra").show();
       $("#nuevoPrecioVenta").val("");
+      $("#nuevoPrecioVenta").show();
       $("#imagenActual").val("");
+      $("#imagenActual").show();
       $(".previsualizar").attr("src", "");
     }
   limpiar(); 
